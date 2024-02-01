@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+
+            display: flex;
+        }
+        header img{
+            float: left;
+        }
+
+        header nav ul {
+            display: flex;
+            line-height: 100px;
+            margin-left: 40px;
+            font-size: 16px;
+            float: left;
+        }
+
+        header nav ul li {
+            margin-left: 30px;
+            list-style: none;
+            font-weight: 700;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header nav ul li a:hover {
+
+            text-decoration: underline;
+            color: rgba(0, 0, 0, 0.766);
+        }
+        .clear{
+            clear: both;
+        }
+        
+        .steps ul{
+            list-style-type: none;
+        }
+        .steps ul li{
+            float: left;
+            margin-left: 15px;
+            color: rgb(57, 57, 57);
+        }
+        .steps ul li::after{
+            content: ' /';
+        }
+        .steps ul li:first-child{
+            margin-left: 0;
+        }
+        .steps ul li a{
+            color: rgb(57, 57, 57);
+            text-decoration: none;
+        }
+        .contents{
+            margin-top: 30px;
+        }
+        .contents h4{
+            font-weight:700;
+        }
+        .contents p{
+            width: 50%;
+        }
+        .product-card{
+           display: grid;
+           grid-template-columns: auto auto auto auto;
+           margin: 20px 0;
+        }
+        .product{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .product:first-child{
+            margin-left: 0;
+        }
+        .product img{
+            width:100%;
+           margin-bottom: 20px;
+        }
+        .product .less-price{
+            color: gray;
+        }
+        .price-pay{
+            font-size: 18px;
+        }
+        .price-pay span{
+            text-decoration: underline;
+        }
+        .saving{
+            color: green;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+      <header>
+            <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="logo" />
+            <nav>
+                <ul>
+                    <li><a href="#">Videos to rent</a></li>
+                    <li><a href="#">Videos to buy</a></li>
+                    <li><a href="#">Used DVDs</a></li>
+                    <li><a href="#">Offers</a></li>
+                </ul>
+            </nav>
+      </header>
+
+      <div class="clear"></div>
+
+      <div class="steps">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Used DVDs</a></li>
+            <li><a href="#">Less than 10$</a></li>
+        </ul>
+      </div>
+
+      <div class="clear"></div>
+      <section class="contents">
+        <div>
+               <h4>Videos less than 10$</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae ex quaerat sed qui, nobis minus, aliquam doloremque omnis nemo suscipit expedita, numquam ratione magni quibusdam explicabo id. Recusandae, voluptatem. Eum.</p>
+
+        <div class="product-card">
+
+            <div class="product">
+                <img src="images/1.jpg" alt="watch one">
+
+                <h5>Watch One</h5>
+                <div class="less-price">
+                    RRP: 18.89$
+                </div>
+                <div class="price-pay">
+                    Price you pay <span>9.99$</span>
+                </div>
+                <div class="saving">
+                    Your saving 6$
+                </div>
+            </div>  
+        
+
+            <div class="product">
+                <img src="images/2.jpg" alt="watch one">
+
+                <h5>Watch Two</h5>
+                <div class="less-price">
+                    RRP: 28.89$
+                </div>
+                <div class="price-pay">
+                    Price you pay <span>12.99$</span>
+                </div>
+                <div class="saving">
+                    Your saving 9$
+                </div>
+            
+            </div>
+       
+
+
+
+            <div class="product">
+                <img src="images/3.jpg" alt="watch one">
+
+                <h5>Watch Three</h5>
+                <div class="less-price">
+                    RRP: 38.89$
+                </div>
+                <div class="price-pay">
+                    Price you pay <span>18.99$</span>
+                </div>
+                <div class="saving">
+                    Your saving 20$
+                </div>
+            </div>
+
+       
+
+
+
+
+            <div class="product">
+                <img src="images/4.jpg" alt="watch one">
+
+                <h5>Watch Four</h5>
+                <div class="less-price">
+                    RRP: 48.89$
+                </div>
+                <div class="price-pay">
+                    Price you pay <span>25.99$</span>
+                </div>
+                <div class="saving">
+                    Your saving 12$
+                </div> 
+            </div>
+
+        </div>
+
+
+
+
+        </div>
+      
+    </section>
+
+
+      
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
